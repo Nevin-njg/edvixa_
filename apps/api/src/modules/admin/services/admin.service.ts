@@ -6,10 +6,10 @@ import { UserModel } from '../../users/models/user.model.js'
 
 class AdminService {
   async dashboard() {
-    const [students, teachers, pendingTeachers, subjects] = await Promise.all([UserModel.countDocuments({ role: 'student', deletedAt: null }), UserModel.countDocuments({ role: 'teacher', deletedAt: null }), TeacherProfileModel.countDocuments({ approvalStatus: 'pending' }), SubjectModel.countDocuments({ isActive: true })])
+    const [students, teachers, pendingTeachers, subjects] = await Promise.all([UserModel.countDocuments({ role: 'student', deletedAt: null }), UserModel.countDocuments({ role: 'teacher', deletedAt: null }), TeacherProfileModel.countDocuments({ approvalStatus: 'pending', submittedAt: { $ne: null } }), SubjectModel.countDocuments({ isActive: true })])
     return { students, teachers, pendingTeachers, subjects, activeBookings: 0, revenue: 0 }
   }
-  pendingTeachers() { return TeacherProfileModel.find({ approvalStatus: 'pending' }).populate('userId', 'name email avatar').populate('subjects', 'name').sort({ createdAt: 1 }).lean() }
+  pendingTeachers() { return TeacherProfileModel.find({ approvalStatus: 'pending', submittedAt: { $ne: null } }).populate('userId', 'name email avatar').populate('subjects', 'name').sort({ createdAt: 1 }).lean() }
   async decideTeacher(profileId: string, adminId: string, decision: 'approved' | 'rejected', reason?: string) {
     const profile = await TeacherProfileModel.findById(profileId)
     if (!profile) throw new AppError(404, 'Teacher profile not found', 'TEACHER_PROFILE_NOT_FOUND')

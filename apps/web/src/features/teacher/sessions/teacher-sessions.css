@@ -1,0 +1,527 @@
+.teacher-sessions-page {
+  display: grid;
+  gap: 18px;
+  padding: 34px 0 60px;
+}
+
+.teacher-sessions-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.teacher-sessions-header p,
+.teacher-sessions-header span {
+  margin: 0;
+  color: var(--muted);
+}
+
+.teacher-sessions-header h1 {
+  margin: 4px 0 4px;
+  font-size: clamp(28px, 3vw, 38px);
+  line-height: 1.1;
+}
+
+.teacher-sessions-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.teacher-sessions-notice {
+  min-height: 44px;
+  padding: 11px 14px;
+  border: 1px solid;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.teacher-sessions-notice.success {
+  color: #75e6aa;
+  border-color: rgba(40, 199, 111, .45);
+  background: rgba(20, 120, 72, .22);
+}
+
+.teacher-sessions-notice.error {
+  color: #ff929e;
+  border-color: rgba(230, 77, 94, .48);
+  background: rgba(128, 31, 44, .26);
+}
+
+.teacher-sessions-notice span {
+  flex: 1;
+}
+
+.teacher-sessions-notice button,
+.teacher-session-modal-header button {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.teacher-sessions-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.teacher-sessions-toolbar {
+  padding: 16px;
+  display: grid;
+  gap: 14px;
+}
+
+.teacher-sessions-toolbar form {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.teacher-sessions-toolbar form > svg {
+  color: var(--muted);
+}
+
+.teacher-sessions-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.teacher-sessions-tabs button {
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #0d1a2c;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.teacher-sessions-tabs button:hover,
+.teacher-sessions-tabs button.active {
+  border-color: var(--gold);
+  background: var(--gold);
+  color: #101623;
+}
+
+.teacher-session-list {
+  display: grid;
+  gap: 14px;
+}
+
+.teacher-session-card {
+  padding: 18px;
+  display: grid;
+  gap: 16px;
+}
+
+.teacher-session-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.teacher-session-student {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.teacher-session-avatar {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: linear-gradient(145deg, #7a5cff, #5d77ff);
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.teacher-session-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teacher-session-student strong,
+.teacher-session-student span {
+  display: block;
+}
+
+.teacher-session-student span {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.teacher-session-main {
+  display: grid;
+  gap: 13px;
+}
+
+.teacher-session-time-panel {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #0a1728;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.teacher-session-time-panel > svg {
+  color: var(--gold);
+}
+
+.teacher-session-time-panel strong,
+.teacher-session-time-panel span {
+  display: block;
+}
+
+.teacher-session-time-panel span {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.teacher-session-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.teacher-session-meta-grid > div {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: #0b1728;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 3px 8px;
+  align-items: center;
+}
+
+.teacher-session-meta-grid svg {
+  grid-row: 1 / span 2;
+  color: var(--gold);
+}
+
+.teacher-session-meta-grid span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.teacher-session-meta-grid strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.teacher-session-doubt,
+.teacher-session-note,
+.teacher-session-modal-doubt {
+  padding: 13px 14px;
+  border: 1px solid rgba(151, 101, 255, .45);
+  border-radius: 12px;
+  background: rgba(77, 51, 140, .25);
+}
+
+.teacher-session-doubt > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #cbb8ff;
+}
+
+.teacher-session-doubt p,
+.teacher-session-note p,
+.teacher-session-modal-doubt p {
+  margin: 8px 0 0;
+}
+
+.teacher-session-doubt span,
+.teacher-session-note span,
+.teacher-session-modal-doubt span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.teacher-session-card-actions {
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.teacher-session-card-actions .success,
+.teacher-session-modal-actions .success {
+  background: #1fc77a;
+  border-color: #1fc77a;
+  color: #071912;
+}
+
+.teacher-sessions-empty,
+.teacher-sessions-state-card {
+  min-height: 310px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.teacher-sessions-empty > svg,
+.teacher-sessions-state-card > svg {
+  color: var(--purple);
+}
+
+.teacher-sessions-empty h2,
+.teacher-sessions-empty p,
+.teacher-sessions-state-card h2,
+.teacher-sessions-state-card p {
+  margin: 0;
+}
+
+.teacher-sessions-empty p,
+.teacher-sessions-state-card p {
+  color: var(--muted);
+  max-width: 560px;
+}
+
+.teacher-sessions-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.teacher-sessions-pagination span {
+  color: var(--muted);
+}
+
+.teacher-session-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  background: rgba(1, 8, 18, .78);
+  backdrop-filter: blur(8px);
+}
+
+.teacher-session-modal {
+  width: min(720px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  padding: 20px;
+  display: grid;
+  gap: 16px;
+}
+
+.teacher-session-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.teacher-session-modal-header span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.teacher-session-modal-header h2 {
+  margin: 4px 0 0;
+}
+
+.teacher-session-modal-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.teacher-session-modal-summary > div {
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.teacher-session-modal-summary svg {
+  color: var(--gold);
+  flex: 0 0 auto;
+}
+
+.teacher-session-modal-summary span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.teacher-session-modal form {
+  display: grid;
+  gap: 15px;
+}
+
+.teacher-session-modal label {
+  display: grid;
+  gap: 7px;
+}
+
+.teacher-session-modal label > span {
+  font-weight: 800;
+}
+
+.teacher-session-modal label small {
+  color: var(--muted);
+}
+
+.teacher-session-modal textarea {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  resize: vertical;
+  background: #071426;
+  color: var(--text);
+  font: inherit;
+}
+
+.teacher-session-modal textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.teacher-session-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.teacher-sessions-loading {
+  min-height: 70vh;
+}
+
+.teacher-session-skeleton {
+  border-radius: 14px;
+  background: linear-gradient(90deg, #112036 25%, #182b47 45%, #112036 65%);
+  background-size: 300% 100%;
+  animation: teacher-session-shimmer 1.35s infinite;
+}
+
+.teacher-session-skeleton.wide {
+  height: 82px;
+}
+
+.teacher-session-skeleton.stat {
+  height: 112px;
+}
+
+.teacher-session-skeleton.toolbar {
+  height: 118px;
+}
+
+.teacher-session-skeleton.card {
+  height: 290px;
+}
+
+@keyframes teacher-session-shimmer {
+  from { background-position: 100% 0; }
+  to { background-position: 0 0; }
+}
+
+@media (max-width: 1050px) {
+  .teacher-sessions-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .teacher-sessions-header {
+    flex-direction: column;
+  }
+
+  .teacher-sessions-header-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .teacher-sessions-toolbar form {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .teacher-sessions-toolbar form .button {
+    width: 100%;
+  }
+
+  .teacher-session-meta-grid,
+  .teacher-session-modal-summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .teacher-sessions-page {
+    padding-top: 22px;
+  }
+
+  .teacher-sessions-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-sessions-header-actions,
+  .teacher-session-card-actions,
+  .teacher-session-modal-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-sessions-header-actions .button,
+  .teacher-session-card-actions .button,
+  .teacher-session-modal-actions .button {
+    width: 100%;
+  }
+
+  .teacher-sessions-toolbar form {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-sessions-toolbar form > svg {
+    display: none;
+  }
+
+  .teacher-session-card-top {
+    align-items: flex-start;
+  }
+
+  .teacher-session-modal-backdrop {
+    padding: 10px;
+  }
+}

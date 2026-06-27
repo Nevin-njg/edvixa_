@@ -1,0 +1,550 @@
+.teacher-bookings-page {
+  display: grid;
+  gap: 20px;
+  padding: 30px clamp(18px, 3vw, 40px) 48px;
+  color: var(--text);
+}
+
+.teacher-bookings-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.teacher-bookings-header p,
+.teacher-bookings-header span {
+  margin: 0;
+  color: var(--muted);
+}
+
+.teacher-bookings-header h1 {
+  margin: 5px 0 4px;
+  font-size: clamp(28px, 3vw, 38px);
+}
+
+.teacher-bookings-header .button,
+.teacher-booking-card-actions .button,
+.teacher-booking-modal-actions .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.teacher-bookings-notice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid;
+  border-radius: 12px;
+}
+
+.teacher-bookings-notice.success {
+  color: #77e3ac;
+  border-color: #22724d;
+  background: #0e3d2a;
+}
+
+.teacher-bookings-notice.error {
+  color: #ff9aa5;
+  border-color: #8b3946;
+  background: #421d26;
+}
+
+.teacher-bookings-notice button {
+  margin-left: auto;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.teacher-bookings-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.teacher-bookings-summary .stat-card {
+  min-height: 112px;
+}
+
+.teacher-bookings-toolbar {
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+}
+
+.teacher-bookings-toolbar form {
+  display: grid;
+  grid-template-columns: auto minmax(220px, 1fr) auto auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.teacher-bookings-toolbar form > svg {
+  color: var(--muted);
+}
+
+.teacher-bookings-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.teacher-bookings-tabs button {
+  min-height: 38px;
+  padding: 8px 13px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #0c1829;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.teacher-bookings-tabs button:hover,
+.teacher-bookings-tabs button.active {
+  color: #101827;
+  border-color: var(--gold);
+  background: var(--gold);
+}
+
+.teacher-booking-list {
+  display: grid;
+  gap: 14px;
+}
+
+.teacher-booking-card {
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+}
+
+.teacher-booking-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.teacher-booking-student {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+}
+
+.teacher-booking-avatar {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  color: white;
+  font-weight: 800;
+  background: linear-gradient(145deg, #6f5cff, #4f7df7);
+}
+
+.teacher-booking-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teacher-booking-name-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.teacher-booking-name-row h2,
+.teacher-booking-student p {
+  margin: 0;
+}
+
+.teacher-booking-name-row h2 {
+  font-size: 18px;
+}
+
+.teacher-booking-student p {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.teacher-booking-schedule {
+  min-width: 280px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #0b1728;
+}
+
+.teacher-booking-schedule svg {
+  color: var(--gold);
+}
+
+.teacher-booking-schedule strong,
+.teacher-booking-schedule span {
+  display: block;
+}
+
+.teacher-booking-schedule span {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.teacher-booking-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.teacher-booking-info-grid > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 8px;
+  align-items: center;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: #0b1728;
+}
+
+.teacher-booking-info-grid svg {
+  grid-row: 1 / 3;
+  color: var(--gold);
+}
+
+.teacher-booking-info-grid span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.teacher-booking-info-grid strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.teacher-booking-doubt {
+  display: grid;
+  gap: 7px;
+  padding: 14px;
+  border: 1px solid #4d3f82;
+  border-radius: 12px;
+  background: linear-gradient(145deg, rgba(64, 44, 124, .34), rgba(18, 27, 48, .9));
+}
+
+.teacher-booking-doubt > div,
+.teacher-booking-doubt small {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.teacher-booking-doubt p,
+.teacher-booking-doubt span,
+.teacher-booking-doubt small {
+  margin: 0;
+}
+
+.teacher-booking-doubt span,
+.teacher-booking-doubt small {
+  color: var(--muted);
+}
+
+.teacher-booking-doubt small {
+  font-size: 12px;
+}
+
+.teacher-booking-note {
+  padding: 12px 14px;
+  border-left: 3px solid var(--gold);
+  border-radius: 8px;
+  color: #dbe6f8;
+  background: #0c1829;
+}
+
+.teacher-booking-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 9px;
+  padding-top: 2px;
+}
+
+.teacher-bookings-page .button.danger {
+  color: #ffb4bd;
+  border: 1px solid #713442;
+  background: #321720;
+}
+
+.teacher-bookings-page .button.danger:hover {
+  color: white;
+  border-color: #c95a6b;
+  background: #5b2430;
+}
+
+.teacher-bookings-empty,
+.teacher-bookings-state-card {
+  min-height: 270px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.teacher-bookings-empty h2,
+.teacher-bookings-empty p,
+.teacher-bookings-state-card h2,
+.teacher-bookings-state-card p {
+  margin: 0;
+}
+
+.teacher-bookings-empty p,
+.teacher-bookings-state-card p {
+  color: var(--muted);
+}
+
+.teacher-bookings-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.teacher-bookings-pagination .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.teacher-booking-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(2, 8, 18, .76);
+  backdrop-filter: blur(6px);
+}
+
+.teacher-booking-modal {
+  width: min(680px, 100%);
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  padding: 20px;
+  border: 1px solid #314765;
+  border-radius: 16px;
+  background: #101d30;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .45);
+}
+
+.teacher-booking-modal > header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.teacher-booking-modal h2,
+.teacher-booking-modal p {
+  margin: 0;
+}
+
+.teacher-booking-modal header p {
+  margin-top: 4px;
+  color: var(--muted);
+}
+
+.teacher-booking-modal header button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.teacher-booking-modal form {
+  display: grid;
+  gap: 14px;
+}
+
+.teacher-booking-modal label {
+  display: grid;
+  gap: 7px;
+  color: #dce7f8;
+  font-weight: 700;
+}
+
+.teacher-booking-modal label span {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.teacher-booking-modal textarea,
+.teacher-booking-modal select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #091524;
+  color: var(--text);
+  font: inherit;
+}
+
+.teacher-booking-modal textarea {
+  min-height: 110px;
+  padding: 11px 12px;
+  resize: vertical;
+}
+
+.teacher-booking-modal select {
+  min-height: 44px;
+  padding: 0 12px;
+}
+
+.teacher-booking-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.teacher-booking-detail-grid > div,
+.teacher-booking-modal-copy {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #0a1626;
+}
+
+.teacher-booking-detail-grid span,
+.teacher-booking-detail-grid small,
+.teacher-booking-modal-copy span {
+  color: var(--muted);
+}
+
+.teacher-booking-modal-copy {
+  margin-top: 10px;
+}
+
+.teacher-booking-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.teacher-booking-refund-note {
+  padding: 11px 12px;
+  border: 1px solid #5f4b1f;
+  border-radius: 9px;
+  color: #f4d987;
+  background: #2c2412;
+  font-size: 13px;
+}
+
+.teacher-bookings-loading {
+  min-height: 600px;
+}
+
+.teacher-bookings-skeleton {
+  min-height: 112px;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #101e31 25%, #17283f 50%, #101e31 75%);
+  background-size: 200% 100%;
+  animation: teacherBookingsPulse 1.3s infinite linear;
+}
+
+.teacher-bookings-skeleton.wide { min-height: 84px; }
+.teacher-bookings-skeleton.toolbar { min-height: 128px; }
+.teacher-bookings-skeleton.card { min-height: 280px; }
+
+@keyframes teacherBookingsPulse {
+  to { background-position: -200% 0; }
+}
+
+@media (max-width: 1080px) {
+  .teacher-bookings-summary,
+  .teacher-booking-info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .teacher-booking-card-top {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .teacher-booking-schedule {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .teacher-bookings-page {
+    padding-inline: 14px;
+  }
+
+  .teacher-bookings-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .teacher-bookings-header .button {
+    width: 100%;
+  }
+
+  .teacher-bookings-toolbar form {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .teacher-bookings-toolbar form .button {
+    grid-column: span 1;
+  }
+
+  .teacher-booking-card-actions,
+  .teacher-booking-modal-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-booking-card-actions .button,
+  .teacher-booking-modal-actions .button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .teacher-bookings-summary,
+  .teacher-booking-info-grid,
+  .teacher-booking-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-bookings-pagination {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .teacher-bookings-pagination .button {
+    width: 100%;
+  }
+}

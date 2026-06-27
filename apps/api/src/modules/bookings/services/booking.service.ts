@@ -450,7 +450,7 @@ class BookingService {
         ),
         timezone:
           resolved.slot.timezone ?? resolved.profile.timezone ?? 'Asia/Kolkata',
-        status: 'upcoming',
+        status: 'pending',
         paymentStatus: 'paid',
       })
 
@@ -696,7 +696,7 @@ class BookingService {
     fee.failureReason = null
     await fee.save()
 
-    booking.status = 'upcoming'
+    booking.status = 'pending'
     booking.paymentStatus = 'paid'
     booking.paymentExpiresAt = null
     await booking.save()

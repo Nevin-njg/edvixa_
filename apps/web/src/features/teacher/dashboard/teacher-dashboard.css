@@ -1,0 +1,504 @@
+.teacher-dashboard-page{display:grid;gap:22px}.teacher-dashboard-header{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}.teacher-dashboard-header h1{font-size:34px;margin:10px 0 5px}.teacher-dashboard-header p{margin:0;color:var(--muted)}.teacher-dashboard-eyebrow{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:13px}.teacher-dashboard-header-actions{display:flex;gap:10px;flex-wrap:wrap}.teacher-dashboard-approval{display:flex;align-items:center;justify-content:space-between;gap:20px;background:linear-gradient(135deg,#1d2340,#121b2e);border-color:#6551a5}.teacher-dashboard-approval h3{margin:10px 0 4px}.teacher-dashboard-approval p{margin:0;color:var(--muted)}.teacher-dashboard-approval.rejected{background:#351b25;border-color:#8b394a}.teacher-dashboard-approval.draft{background:#2f2819;border-color:#755f2b}.teacher-dashboard-approval.approved{background:#12352b;border-color:#277d5a}.teacher-dashboard-stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.teacher-dashboard-stat-grid .stat-card{min-height:122px}.teacher-dashboard-focus-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(320px,.75fr);gap:18px}.teacher-dashboard-main-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(330px,.72fr);gap:18px;align-items:start}.teacher-dashboard-main-column,.teacher-dashboard-side-column{display:grid;gap:18px}.teacher-dashboard-card-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:18px}.teacher-dashboard-card-heading>div>span{display:block;color:var(--muted);font-size:13px;margin-bottom:4px}.teacher-dashboard-card-heading h2{font-size:20px;margin:0}.teacher-dashboard-card-heading>a,.teacher-dashboard-text-link{display:inline-flex;align-items:center;gap:6px;color:var(--gold);font-size:13px;font-weight:800}.teacher-dashboard-next-session{background:radial-gradient(circle at 100% 0%,#8b5cf62a 0,transparent 42%),linear-gradient(145deg,#171f38,#101b2d)}.teacher-dashboard-session-list{display:grid;gap:10px}.teacher-dashboard-session{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:13px;padding:14px;border:1px solid var(--line);border-radius:13px;background:#0b1626}.teacher-dashboard-session.compact{grid-template-columns:auto minmax(0,1fr)}.teacher-dashboard-avatar{width:46px;height:46px;border-radius:13px;background:linear-gradient(145deg,#8b5cf6,#5f77ff);display:grid;place-items:center;overflow:hidden;color:#fff;font-weight:900;flex:none}.teacher-dashboard-avatar img{width:100%;height:100%;object-fit:cover}.teacher-dashboard-session-copy{min-width:0}.teacher-dashboard-session-title{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.teacher-dashboard-session-title strong{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.teacher-dashboard-session-copy p{margin:5px 0;color:var(--muted);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.teacher-dashboard-session-meta{display:flex;align-items:center;gap:14px;color:#9fb0c7;font-size:12px;flex-wrap:wrap}.teacher-dashboard-session-meta span{display:inline-flex;align-items:center;gap:5px}.teacher-dashboard-session-action{white-space:nowrap}.teacher-dashboard-quick-actions{background:linear-gradient(145deg,#171d34,#101b2d)}.teacher-dashboard-action-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.teacher-dashboard-action-grid>a{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:10px;padding:13px;border:1px solid var(--line);border-radius:12px;background:#0b1626;color:var(--text)}.teacher-dashboard-action-grid>a:hover{border-color:#7e65c7;background:#111d31}.teacher-dashboard-action-grid>a>svg:first-child{color:var(--gold)}.teacher-dashboard-action-grid span{display:grid;gap:3px}.teacher-dashboard-action-grid strong{font-size:13px}.teacher-dashboard-action-grid small{color:var(--muted)}.teacher-dashboard-empty{min-height:170px;border:1px dashed #334762;border-radius:13px;display:grid;place-items:center;align-content:center;gap:8px;text-align:center;padding:22px;color:var(--muted)}.teacher-dashboard-empty>span{width:48px;height:48px;border-radius:14px;background:#8b5cf61b;color:#bba4ff;display:grid;place-items:center}.teacher-dashboard-empty strong{color:var(--text);font-size:16px}.teacher-dashboard-empty p{max-width:430px;margin:0;line-height:1.5}.teacher-dashboard-empty .button{margin-top:4px}.teacher-dashboard-doubt-list{display:grid;gap:10px}.teacher-dashboard-doubt{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px;border:1px solid var(--line);border-radius:12px;background:#0b1626;color:var(--text)}.teacher-dashboard-doubt:hover{border-color:#7e65c7}.teacher-dashboard-doubt-tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:8px}.teacher-dashboard-doubt strong{display:block}.teacher-dashboard-doubt p{margin:5px 0 0;color:var(--muted);font-size:13px}.teacher-dashboard-doubt-impact{display:flex;gap:12px;color:#c2b0ff}.teacher-dashboard-doubt-impact span{display:inline-flex;align-items:center;gap:5px;font-weight:800}.teacher-dashboard-earnings-card{background:radial-gradient(circle at 100% 0%,#f2bd4b1b 0,transparent 48%),linear-gradient(145deg,#171f38,#101b2d)}.teacher-dashboard-trend{display:inline-flex;align-items:center;gap:5px;padding:6px 9px;border-radius:999px;background:#123a2c;color:#7ce8b4;font-size:12px;font-weight:850}.teacher-dashboard-trend.negative{background:#3a1d28;color:#ff9aaa}.teacher-dashboard-bars{height:150px;display:grid;grid-template-columns:repeat(7,1fr);gap:8px;align-items:end;margin:20px 0}.teacher-dashboard-bars>div{height:100%;display:grid;grid-template-rows:1fr auto;gap:7px;align-items:end;justify-items:center}.teacher-dashboard-bars span{display:block;width:100%;max-width:28px;border-radius:7px 7px 3px 3px;background:linear-gradient(180deg,#f6c84f,#8b5cf6);min-height:8px}.teacher-dashboard-bars small{color:var(--muted);font-size:10px}.teacher-dashboard-money-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:15px}.teacher-dashboard-money-grid>div{padding:12px;border:1px solid var(--line);border-radius:11px;background:#0b1626;display:grid;gap:5px}.teacher-dashboard-money-grid span{color:var(--muted);font-size:12px}.teacher-dashboard-performance-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.teacher-dashboard-performance-grid>div{padding:13px;border:1px solid var(--line);border-radius:11px;background:#0b1626;display:grid;gap:4px}.teacher-dashboard-performance-grid svg{color:var(--gold)}.teacher-dashboard-performance-grid span,.teacher-dashboard-performance-grid small{color:var(--muted);font-size:11px}.teacher-dashboard-performance-grid strong{font-size:20px}.teacher-dashboard-review-list{display:grid;gap:10px}.teacher-dashboard-review-list article{padding:13px;border:1px solid var(--line);border-radius:11px;background:#0b1626}.teacher-dashboard-review-list article>div{display:flex;justify-content:space-between;gap:10px}.teacher-dashboard-review-list article span{display:inline-flex;align-items:center;gap:4px;color:var(--gold);font-weight:800}.teacher-dashboard-review-list p{margin:8px 0 0;color:var(--muted);line-height:1.5;font-size:13px}.teacher-dashboard-readiness p{color:var(--muted);line-height:1.5}.teacher-dashboard-error{text-align:center;padding:40px}.teacher-dashboard-skeleton-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.teacher-dashboard-skeleton-grid .skeleton{height:130px}.teacher-dashboard-skeleton-grid .skeleton:nth-child(n+5){grid-column:span 2;height:300px}
+@media(max-width:1180px){.teacher-dashboard-focus-grid,.teacher-dashboard-main-grid{grid-template-columns:1fr}.teacher-dashboard-side-column{grid-template-columns:repeat(2,minmax(0,1fr))}.teacher-dashboard-side-column>*.teacher-dashboard-earnings-card{grid-row:span 2}.teacher-dashboard-side-column>.teacher-dashboard-readiness{grid-column:span 2}}
+@media(max-width:900px){.teacher-dashboard-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.teacher-dashboard-header{align-items:flex-start}.teacher-dashboard-header-actions{display:grid}.teacher-dashboard-side-column{grid-template-columns:1fr}.teacher-dashboard-side-column>*.teacher-dashboard-earnings-card,.teacher-dashboard-side-column>.teacher-dashboard-readiness{grid-row:auto;grid-column:auto}.teacher-dashboard-action-grid{grid-template-columns:1fr}.teacher-dashboard-skeleton-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.teacher-dashboard-skeleton-grid .skeleton:nth-child(n+5){grid-column:auto}}
+@media(max-width:650px){.teacher-dashboard-page{gap:16px}.teacher-dashboard-header{display:grid}.teacher-dashboard-header h1{font-size:28px}.teacher-dashboard-header-actions{grid-template-columns:1fr 1fr;width:100%}.teacher-dashboard-header-actions .button{width:100%}.teacher-dashboard-approval{display:grid}.teacher-dashboard-stat-grid{grid-template-columns:1fr}.teacher-dashboard-session{grid-template-columns:auto minmax(0,1fr)}.teacher-dashboard-session-action{grid-column:1/-1;width:100%}.teacher-dashboard-doubt{display:grid}.teacher-dashboard-doubt-impact{justify-content:flex-start}.teacher-dashboard-money-grid,.teacher-dashboard-performance-grid{grid-template-columns:1fr}.teacher-dashboard-skeleton-grid{grid-template-columns:1fr}}
+.teacher-dashboard-availability-list{display:grid;gap:10px}.teacher-dashboard-availability{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:13px;padding:14px;border:1px solid var(--line);border-radius:13px;background:#0b1626}.teacher-dashboard-availability.compact{grid-template-columns:auto minmax(0,1fr)}.teacher-dashboard-availability-icon{width:46px;height:46px;border-radius:13px;background:#12372c;color:#73e2ad;display:grid;place-items:center}.teacher-dashboard-availability-title{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.teacher-dashboard-availability-title strong{font-size:15px}.teacher-dashboard-availability p{margin:6px 0 0;color:var(--muted);font-size:13px}
+@media(max-width:650px){.teacher-dashboard-availability{grid-template-columns:auto minmax(0,1fr)}.teacher-dashboard-availability .teacher-dashboard-session-action{grid-column:1/-1;width:100%}}
+/* EDVIXA_TEACHER_TODAY_PLAN_START */
+.teacher-dashboard-today-plan{display:grid;gap:18px}.teacher-dashboard-today-group{display:grid;gap:10px}.teacher-dashboard-today-group+.teacher-dashboard-today-group{padding-top:16px;border-top:1px solid var(--line)}.teacher-dashboard-today-group-heading{display:flex;align-items:center;justify-content:space-between;gap:14px}.teacher-dashboard-today-group-heading>div{display:grid;gap:3px}.teacher-dashboard-today-group-heading strong{font-size:14px}.teacher-dashboard-today-group-heading span{color:var(--muted);font-size:12px}
+/* EDVIXA_TEACHER_TODAY_PLAN_END */
+
+/* EDVIXA_TEACHER_DASHBOARD_SESSION_FOCUS_START */
+.teacher-dashboard-upcoming-card {
+  min-height: 100%;
+}
+
+.teacher-dashboard-completed-card {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(46, 204, 142, .10), transparent 46%),
+    linear-gradient(145deg, #111e31, #0d1828);
+}
+
+.teacher-dashboard-completed-summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  padding: 17px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #0b1626;
+}
+
+.teacher-dashboard-completed-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  color: #74e6b2;
+  background: rgba(29, 143, 97, .18);
+}
+
+.teacher-dashboard-completed-summary > div:nth-child(2) {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.teacher-dashboard-completed-summary strong {
+  color: var(--text);
+  font-size: 28px;
+  line-height: 1;
+}
+
+.teacher-dashboard-completed-summary span {
+  color: var(--text);
+  font-weight: 800;
+}
+
+.teacher-dashboard-completed-summary p {
+  margin: 2px 0 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+@media (max-width: 720px) {
+  .teacher-dashboard-completed-summary {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .teacher-dashboard-completed-summary > a {
+    grid-column: 1 / -1;
+  }
+
+  .teacher-dashboard-completed-summary .button {
+    width: 100%;
+  }
+}
+/* EDVIXA_TEACHER_DASHBOARD_SESSION_FOCUS_END */
+
+/* EDVIXA_TEACHER_DASHBOARD_TODAY_AND_FEEDBACK_FIX_START */
+.teacher-dashboard-upcoming-groups {
+  display: grid;
+  gap: 18px;
+}
+
+.teacher-dashboard-upcoming-group {
+  display: grid;
+  gap: 10px;
+}
+
+.teacher-dashboard-upcoming-group + .teacher-dashboard-upcoming-group {
+  padding-top: 17px;
+  border-top: 1px solid var(--line);
+}
+
+.teacher-dashboard-upcoming-group-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.teacher-dashboard-upcoming-group-heading strong {
+  color: var(--text);
+  font-size: 14px;
+}
+
+.teacher-dashboard-upcoming-group-heading span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.teacher-dashboard-feedback-bottom {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.teacher-dashboard-feedback-card {
+  width: min(100%, 960px);
+  background:
+    radial-gradient(circle at 50% 100%, rgba(139, 92, 246, .10), transparent 48%),
+    linear-gradient(145deg, #111e31, #0d1828);
+}
+
+.teacher-dashboard-feedback-card .teacher-dashboard-review-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.teacher-dashboard-feedback-card .teacher-dashboard-review-list article {
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .teacher-dashboard-feedback-card .teacher-dashboard-review-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .teacher-dashboard-feedback-card .teacher-dashboard-review-list {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-dashboard-upcoming-group-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+/* EDVIXA_TEACHER_DASHBOARD_TODAY_AND_FEEDBACK_FIX_END */
+/* EDVIXA_TEACHER_SEPARATE_TODAY_SESSIONS_SLOTS_START */
+.teacher-dashboard-stat-grid.teacher-dashboard-stat-grid-five {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.teacher-dashboard-focus-grid.teacher-dashboard-focus-grid-session-slots {
+  grid-template-columns: minmax(0, 1.3fr) minmax(340px, .7fr);
+  align-items: start;
+}
+
+.teacher-dashboard-focus-side {
+  display: grid;
+  gap: 18px;
+}
+
+.teacher-dashboard-today-slots-card {
+  min-width: 0;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(46, 204, 142, .10), transparent 45%),
+    linear-gradient(145deg, #111e31, #0d1828);
+}
+
+.teacher-dashboard-today-slots-card .teacher-dashboard-availability {
+  grid-template-columns: auto minmax(0, 1fr);
+}
+
+.teacher-dashboard-today-slots-card .teacher-dashboard-session-action {
+  display: none;
+}
+
+.teacher-dashboard-main-column .teacher-dashboard-feedback-card {
+  width: 100%;
+  margin: 0;
+}
+
+.teacher-dashboard-main-column
+  .teacher-dashboard-feedback-card
+  .teacher-dashboard-review-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 1250px) {
+  .teacher-dashboard-stat-grid.teacher-dashboard-stat-grid-five {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1050px) {
+  .teacher-dashboard-focus-grid.teacher-dashboard-focus-grid-session-slots {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-dashboard-focus-side {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .teacher-dashboard-stat-grid.teacher-dashboard-stat-grid-five,
+  .teacher-dashboard-focus-side,
+  .teacher-dashboard-main-column
+    .teacher-dashboard-feedback-card
+    .teacher-dashboard-review-list {
+    grid-template-columns: 1fr;
+  }
+}
+/* EDVIXA_TEACHER_SEPARATE_TODAY_SESSIONS_SLOTS_END */
+
+/* EDVIXA_TEACHER_UPCOMING_SEPARATED_START */
+.teacher-dashboard-upcoming-card .teacher-dashboard-upcoming-groups {
+  display: grid;
+  gap: 0;
+}
+
+.teacher-dashboard-upcoming-card .teacher-dashboard-upcoming-group {
+  display: grid;
+  gap: 12px;
+  padding: 18px 0;
+}
+
+.teacher-dashboard-upcoming-card .teacher-dashboard-upcoming-group:first-child {
+  padding-top: 4px;
+}
+
+.teacher-dashboard-upcoming-card .teacher-dashboard-upcoming-group:last-child {
+  padding-bottom: 0;
+}
+
+.teacher-dashboard-upcoming-card
+  .teacher-dashboard-upcoming-group
+  + .teacher-dashboard-upcoming-group {
+  border-top: 1px solid var(--line);
+}
+
+.teacher-dashboard-upcoming-group-heading > div {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.teacher-dashboard-inline-empty {
+  min-height: 58px;
+  padding: 13px 15px;
+  border: 1px dashed #314966;
+  border-radius: 12px;
+  background: #0a1525;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.teacher-dashboard-inline-empty svg {
+  flex: 0 0 auto;
+  color: var(--gold);
+}
+
+.teacher-dashboard-inline-empty a {
+  margin-left: auto;
+  color: var(--gold);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.teacher-dashboard-published-group .teacher-dashboard-availability {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+}
+
+.teacher-dashboard-focus-grid.teacher-dashboard-focus-grid-session-slots {
+  grid-template-columns: minmax(0, 1.55fr) minmax(310px, .45fr);
+}
+
+@media (max-width: 1050px) {
+  .teacher-dashboard-focus-grid.teacher-dashboard-focus-grid-session-slots {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .teacher-dashboard-inline-empty {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .teacher-dashboard-inline-empty a {
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  .teacher-dashboard-published-group .teacher-dashboard-availability {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .teacher-dashboard-published-group
+    .teacher-dashboard-availability
+    .teacher-dashboard-session-action {
+    grid-column: 1 / -1;
+  }
+}
+/* EDVIXA_TEACHER_UPCOMING_SEPARATED_END */
+
+/* EDVIXA_TEACHER_DASHBOARD_ALIGNMENT_FIX_START */
+.teacher-dashboard-page {
+  width: min(100%, 1500px);
+  margin-inline: auto;
+  gap: 20px;
+}
+
+.teacher-dashboard-stat-grid.teacher-dashboard-stat-grid-five {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.teacher-dashboard-stat-grid.teacher-dashboard-stat-grid-five .stat-card {
+  min-width: 0;
+  min-height: 106px;
+  padding: 18px;
+}
+
+.teacher-dashboard-focus-grid.teacher-dashboard-focus-grid-session-slots,
+.teacher-dashboard-main-grid {
+  grid-template-columns: minmax(0, 1.65fr) minmax(360px, .75fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.teacher-dashboard-focus-side,
+.teacher-dashboard-main-column,
+.teacher-dashboard-side-column {
+  min-width: 0;
+  gap: 20px;
+}
+
+.teacher-dashboard-focus-side,
+.teacher-dashboard-focus-side > .card,
+.teacher-dashboard-upcoming-card {
+  height: 100%;
+}
+
+.teacher-dashboard-upcoming-card,
+.teacher-dashboard-quick-actions,
+.teacher-dashboard-main-column > .card,
+.teacher-dashboard-side-column > .card {
+  min-width: 0;
+  padding: 20px;
+}
+
+.teacher-dashboard-card-heading {
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.teacher-dashboard-card-heading > div {
+  min-width: 0;
+}
+
+.teacher-dashboard-card-heading h2 {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.teacher-dashboard-card-heading > a,
+.teacher-dashboard-text-link {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.teacher-dashboard-upcoming-group {
+  min-width: 0;
+}
+
+.teacher-dashboard-upcoming-group-heading {
+  align-items: center;
+}
+
+.teacher-dashboard-session,
+.teacher-dashboard-availability {
+  min-width: 0;
+  padding: 13px 14px;
+}
+
+.teacher-dashboard-session-copy,
+.teacher-dashboard-availability > div:nth-child(2) {
+  min-width: 0;
+}
+
+.teacher-dashboard-session-action {
+  min-width: 112px;
+  justify-content: center;
+}
+
+.teacher-dashboard-quick-actions .teacher-dashboard-card-heading {
+  margin-bottom: 14px;
+}
+
+.teacher-dashboard-action-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.teacher-dashboard-action-grid > a {
+  min-width: 0;
+  min-height: 82px;
+  padding: 12px;
+}
+
+.teacher-dashboard-action-grid span,
+.teacher-dashboard-action-grid strong,
+.teacher-dashboard-action-grid small {
+  min-width: 0;
+}
+
+.teacher-dashboard-action-grid small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.teacher-dashboard-completed-summary {
+  min-height: 100px;
+}
+
+.teacher-dashboard-main-column .teacher-dashboard-feedback-card {
+  width: 100%;
+}
+
+.teacher-dashboard-main-column
+  .teacher-dashboard-feedback-card
+  .teacher-dashboard-review-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.teacher-dashboard-side-column {
+  align-content: start;
+}
+
+.teacher-dashboard-side-column .teacher-dashboard-earnings-card,
+.teacher-dashboard-side-column .teacher-dashboard-readiness {
+  width: 100%;
+}
+
+@media (max-width: 1280px) {
+  .teacher-dashboard-stat-grid.teacher-dashboard-stat-grid-five {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .teacher-dashboard-focus-grid.teacher-dashboard-focus-grid-session-slots,
+  .teacher-dashboard-main-grid {
+    grid-template-columns: minmax(0, 1.45fr) minmax(330px, .8fr);
+  }
+}
+
+@media (max-width: 1050px) {
+  .teacher-dashboard-focus-grid.teacher-dashboard-focus-grid-session-slots,
+  .teacher-dashboard-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-dashboard-focus-side,
+  .teacher-dashboard-side-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .teacher-dashboard-side-column > .teacher-dashboard-readiness {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  .teacher-dashboard-stat-grid.teacher-dashboard-stat-grid-five,
+  .teacher-dashboard-focus-side,
+  .teacher-dashboard-side-column,
+  .teacher-dashboard-main-column
+    .teacher-dashboard-feedback-card
+    .teacher-dashboard-review-list {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-dashboard-side-column > .teacher-dashboard-readiness {
+    grid-column: auto;
+  }
+
+  .teacher-dashboard-upcoming-card,
+  .teacher-dashboard-quick-actions,
+  .teacher-dashboard-main-column > .card,
+  .teacher-dashboard-side-column > .card {
+    padding: 16px;
+  }
+}
+/* EDVIXA_TEACHER_DASHBOARD_ALIGNMENT_FIX_END */

@@ -8,7 +8,7 @@ const menus = {
     ['/student/dashboard','Dashboard',LayoutDashboard], ['/student/practice','AI Practice',ClipboardCheck], ['/student/results','Results',BookOpen], ['/student/progress','Progress',ChartNoAxesCombined], ['/student/doubts','Doubt Polls',MessageSquareWarning], ['/student/teachers','Book Teacher',UsersRound], ['/student/sessions','My Sessions',CalendarDays], ['/student/profile','Profile',UserRound],
   ],
   teacher: [
-    ['/teacher/dashboard','Dashboard',LayoutDashboard], ['/teacher/bookings','Booking Requests',ClipboardCheck], ['/teacher/doubts','Student Doubts',MessageSquareWarning], ['/teacher/slots','Manage Slots',CalendarDays], ['/teacher/sessions','Sessions',BookOpen], ['/teacher/students','Students',UsersRound], ['/teacher/earnings','Earnings',CircleDollarSign], ['/teacher/profile','Profile',UserRound],
+    ['/teacher/dashboard','Dashboard',LayoutDashboard], ['/teacher/bookings','Booking Requests',ClipboardCheck], ['/teacher/doubts','Student Doubts',MessageSquareWarning], ['/teacher/slots','Manage Slots',CalendarDays], ['/teacher/sessions','Sessions',BookOpen], ['/teacher/earnings','Earnings',CircleDollarSign], ['/teacher/profile','Profile',UserRound],
   ],
   admin: [
     ['/admin/dashboard','Dashboard',LayoutDashboard], ['/admin/users','Users',UsersRound], ['/admin/teachers','Teacher Approvals',ShieldCheck], ['/admin/bookings','Bookings',CalendarDays], ['/admin/fees','Fees',CircleDollarSign], ['/admin/subjects','Subjects',BookOpen], ['/admin/settings','Settings',Settings],
